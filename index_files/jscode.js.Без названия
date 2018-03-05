@@ -1,0 +1,45 @@
+
+// // document.getElementById('p').innerHTML += "Replaces the P element with this one"; // galima parasyt let p = document.getElementById('p'); ir atrodis: p..innerHTML += "bet kas"
+// // document.getElementById('h1').innerHTML = "Good morning !!!!"
+// //
+// // document.getElementsByClassName('p2')[0].innerHTML = "This changed by ClassName.";
+//
+//
+// // let btn = document.getElementById('btn');
+// // let text = document.getElementById('p');
+// // btn.addEventListener("click", changeText);
+// // function changeText(){
+// //   // console.log("click");
+// //   text.innerHTML = "Text changed by changeText function"
+// // }
+//
+// let btn = document.getElementById('btn');
+// btn.addEventListener("click", changeText);
+// function changeText() {
+// //   if(btn.style.background !== 'red') {
+// //     btn.style.background = 'red';
+// //   } else (btn.style.background = 'blue')
+// // }
+//
+// btn.classList.toogle('red')
+// // btn.classList.add('red')
+// // btn.classList.remove('red')
+
+
+// let paragraph = document.createElement('p');
+// let node = document.createTextNode('My third text')
+// paragraph.appendChild(node);
+// // document.getElementById('box').appendChild(paragraph);
+// let p1 = document.getElementById("p1")
+// document.getElementById('box').insertBefore(paragraph, p1);
+
+let paragraph = document.createElement('p');
+let node = document.createTextNode("Some text added by JS");
+paragraph.appendChild(node);
+document.getElementById("h1").appendChild(paragraph);
+
+
+
+function scrollToView(x) {
+  document.querySelector(x).scrollIntoView({behavior:'smooth'})
+}
